@@ -1,0 +1,75 @@
+/* for img */
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0.8;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(-100%);
+        opacity: 0.8;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+/* for text */
+@keyframes slideIn2 {
+    from {
+        transform: translateX(-200%);
+        opacity: 0.5;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut2 {
+    from {
+        transform: translateX(200%);
+        opacity: 0.5;
+    }
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+.container {
+    position: relative;
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.row {
+    display: flex;
+    transition: all 0.5s ease;
+}
+
+.mi-layout .col-8 img {
+    animation: slideOut 0.5s forwards;
+}
+
+.ember-layout .col-8 img {
+    animation: slideIn 0.5s forwards;
+}
+
+p {
+    z-index: -1;
+}
+
+.mi-layout .col-4 p {
+    animation: slideOut2 0.5s forwards;
+}
+
+.ember-layout .col-4 p {
+    animation: slideIn2 0.5s forwards;
+}
