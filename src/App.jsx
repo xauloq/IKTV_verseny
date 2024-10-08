@@ -1,7 +1,7 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Section from "./components/Section.jsx";
+import Section from './components/Section';
 
 
 function App() {
