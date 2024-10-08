@@ -73,3 +73,8 @@ p {
 .ember-layout .col-4 p {
     animation: slideIn2 0.5s forwards;
 }
+
+h2 {
+    z-index: 1;
+    text-align: center;
+}

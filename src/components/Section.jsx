@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
-import './Section.css'; // Import the CSS file
+import './Section.css';
 
 function Section(props) {
     const [imgSrc, setImgSrc] = useState(props.emberImgSrc);
@@ -18,9 +18,10 @@ function Section(props) {
 
     return (
         <section className="container card mt-4">
+            {/* eslint-disable-next-line react/prop-types */}
+            <h2>{props.secCim}</h2>
             <div className="row">
                 <div className="col-6 text-center" onClick={handleEmberClick}>
-                    <h2>{props.emberCim}</h2>
                     <h3>Ember</h3>
                 </div>
                 <div className="col-6 text-center" onClick={handleMiClick}>
