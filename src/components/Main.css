@@ -2,12 +2,14 @@ main {
     flex-grow: 1;
     padding: 2rem;
     text-align: center;
+    background-color: #333;
+    color: #f9f9f9;
 }
 
 main h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #1f2937;
+    color: #f9f9f9;
 }
 
 main p {
@@ -15,4 +17,5 @@ main p {
     line-height: 1.6;
     max-width: 600px;
     margin: 0 auto;
+    color: #f9f9f9;
 }

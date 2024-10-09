@@ -5,26 +5,28 @@ import './Section.css';
 function Section(props) {
     const [imgSrc, setImgSrc] = useState(props.emberImgSrc);
     const [isMiLayout, setIsMiLayout] = useState(false);
+    const [activeText, setActiveText] = useState('');
 
     const handleEmberClick = () => {
         setImgSrc(props.emberImgSrc);
         setIsMiLayout(false);
+        setActiveText('ember');
     };
 
     const handleMiClick = () => {
         setImgSrc(props.miImgSrc);
         setIsMiLayout(true);
+        setActiveText('mi');
     };
 
     return (
         <section className="container card mt-4">
-            {/* eslint-disable-next-line react/prop-types */}
             <h2>{props.secCim}</h2>
             <div className="row">
-                <div className="col-6 text-center" onClick={handleEmberClick}>
+                <div className={`col-6 text-center ${activeText === 'ember' ? 'active' : ''}`} onClick={handleEmberClick}>
                     <h3>Ember</h3>
                 </div>
-                <div className="col-6 text-center" onClick={handleMiClick}>
+                <div className={`col-6 text-center ${activeText === 'mi' ? 'active' : ''}`} onClick={handleMiClick}>
                     <h2>{props.miCim}</h2>
                     <h3>Mi</h3>
                 </div>
