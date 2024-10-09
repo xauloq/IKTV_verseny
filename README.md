@@ -13,7 +13,7 @@ Ez a projekt egy React alapú webalkalmazás, amelyet a Debreceni Egyetem XIII. 
 
 Ha szeretnéd futtatni ezt a projektet helyi környezetben, kövesd az alábbi lépéseket:
 
-1. **Clone-old a repót**:
+1. **Clone-olja a repót**:
    ```bash
    git clone https://github.com/felhasznalonev/projektneve.git
 2. **Navigáljon a könyvtárba**
