@@ -1,3 +1,6 @@
+
+
+
 @keyframes slideIn {
     from {
         transform: translateX(110%);
@@ -43,7 +46,7 @@ h3:hover, .active h3 {
     transition: color 0.3s ease;
 }
 
-.col-6 {
+.col-md-6 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,4 +96,30 @@ img {
     margin: 2% auto;
     border-radius: 15px;
     z-index: 5;
+}
+
+@media (max-width: 768px) {
+    img {
+        width: clamp(200px, 100%, 500px);
+        margin: 2% auto;
+        border-radius: 15px;
+        z-index: 5;
+    }
+    @keyframes slideIn {
+        from {
+            transform: translateY(80%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes slideOut {
+        from {
+            transform: translateY(-80%);
+        }
+        to {
+            transform: translateY(0%);
+        }
+    }
 }

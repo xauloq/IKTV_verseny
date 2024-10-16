@@ -23,29 +23,29 @@ function Section(props) {
         <section className="container sectionCont card mt-4">
             <h2>{props.secCim}</h2>
             <div className="row">
-                <div className={`col-6 text-center ${activeText === 'ember' ? 'active' : ''}`} onClick={handleEmberClick}>
+                <div className={`col-md-6 text-center ${activeText === 'ember' ? 'active' : ''}`} onClick={handleEmberClick}>
                     <h3>Ember</h3>
                 </div>
-                <div className={`col-6 text-center ${activeText === 'mi' ? 'active' : ''}`} onClick={handleMiClick}>
+                <div className={`col-md-6 text-center ${activeText === 'mi' ? 'active' : ''}`} onClick={handleMiClick}>
                     <h3>Mi</h3>
                 </div>
             </div>
             <div className={`row ${isMiLayout ? 'mi-layout' : 'ember-layout'}`}>
                 {isMiLayout ? (
                     <>
-                        <div className="col-6">
+                        <div className="col-md-6">
                             <p>{props.miText}</p>
                         </div>
-                        <div className="col-6">
+                        <div className="col-md-6">
                             <img src={imgSrc} alt=""/>
                         </div>
                     </>
                 ) : (
                     <>
-                        <div className="col-6">
+                        <div className="col-md-6">
                             <img src={imgSrc} alt=""/>
                         </div>
-                        <div className="col-6">
+                        <div className="col-md-6">
                             <p>{props.emberText}</p>
                         </div>
                     </>
