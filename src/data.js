@@ -2,60 +2,65 @@ import aiFelism from './assets/AIalmaFelismero.png';
 import EmberAlmaFelism from './assets/EmberAlmaFelismero.png';
 import aiSzuret from './assets/aiSzuret.png';
 import emberSzuret from './assets/emberSzuret.png';
+import almaLogEmb from './assets/almaLogEmb.png';
+import almaLogAI from './assets/almaLogAI.png';
+import koltsegEmb from './assets/koltsegEmb.png';
+import koltsegAI from './assets/koltsegAI.png';
+import adaptacioEmb from './assets/adaptacioEmb.png';
+import adaptacioAI from './assets/adaptacioAI.png';
 
 export const text = [
   {
-    key:'termés-felismerése',
+    key: 'termes-felismerese',
     secCim: 'Termés felismerése és osztályozása',
     emberImgSrc: EmberAlmaFelism,
     miImgSrc: aiFelism,
-    miText:'A mesterséges intelligencia szenzorokat és gépi látást használ az almák érettségének, méretének, színének automatikus felismerésére és osztályozására. Az AI nagyobb hatékonysággal képes az adatok feldolgozására, csökkentve a hibák arányát.',
-    emberText:'Az emberek vizuálisan és tapintás alapján azonnal meg tudják állapítani, hogy az alma érett-e, túléréssel fenyeget, vagy beteg.'
+    miText: 'A mesterséges intelligencia szenzorokat és gépi látást használ az almák érettségének, méretének, és színének automatikus felismerésére és osztályozására. Az AI pontosabb és gyorsabb adatfeldolgozást biztosít, csökkentve a hibákat és a terményveszteséget.',
+    emberText: 'Az emberek vizuális megfigyelésre és tapintásra hagyatkoznak, amikor az alma érettségét vagy betegségét állapítják meg. Az emberi munka tapasztalatra és intuícióra épül, de hajlamosabb a szubjektív hibákra.'
   },
 
   {
-    key: 'szüretelés',
-    secCim: 'Termés felismerése és osztályozása',
+    key: 'szuretelés',
+    secCim: 'Szüretelés folyamata',
     emberImgSrc: emberSzuret,
     miImgSrc: aiSzuret,
-    miText:'A mesterséges intelligencia szenzorokat és gépi látást használ az almák érettségének, méretének, színének automatikus felismerésére és osztályozására. Az AI nagyobb hatékonysággal képes az adatok feldolgozására, csökkentve a hibák arányát.',
-    emberText:'Az emberek vizuálisan és tapintás alapján azonnal meg tudják állapítani, hogy az alma érett-e, túléréssel fenyeget, vagy beteg.',
+    miText: 'A mesterséges intelligenciával vezérelt gépek képesek automatikusan szüretelni a termést, a legjobb érettségi szint alapján. Az AI rendszerek optimalizált mozgásokat használnak, minimalizálva a termény sérülését.',
+    emberText: 'Az emberek kézzel végzik a szüretet, figyelve az egyes almákra. Bár az emberi kéz finomabb lehet, a munka lassabb és fáradságosabb, és nagyobb a valószínűsége a hibának vagy a sérülésnek.'
   },
 
   {
-    key:'logisztika',
-    secCim:'Logisztika és raktározás',
-    emberImgSrc:'',
-    miImgSrc:'',
-    miText:'Az AI azonnal megszervezheti az almák elosztását, optimalizálva a szállítást, az erőforrások kihasználását és a raktározási kapacitást, minimalizálva a veszteséget.',
-    emberText:'Az emberek a szüret után manuálisan szortírozzák és csomagolják az almákat, figyelve a minőségi előírásokra. A raktározásra és elosztásra szintén emberek figyelnek.'
+    key: 'logisztika',
+    secCim: 'Logisztika és raktározás',
+    emberImgSrc: almaLogEmb,
+    miImgSrc: almaLogAI,
+    miText: 'Az AI rendszerek képesek automatikusan tervezni és optimalizálni a logisztikát, beleértve a szállítási útvonalakat és a raktározást is. Az AI minimalizálja a veszteségeket a gyors döntéshozatallal és a tárolási erőforrások hatékony felhasználásával.',
+    emberText: 'Az emberek manuálisan osztályozzák és csomagolják az almákat a szüret után. A logisztikai döntések gyakran tapasztalatokon és helyzetfelismerésen alapulnak, de kevésbé optimalizáltak, mint a gépi rendszerek által végzett folyamatok.'
   },
 
   {
-    key:'költségek',
-    secCim:'Költségek és hatékonyság',
-    emberImgSrc:'',
-    miImgSrc:'',
-    miText:'AI-alapú rendszerek hosszú távon költséghatékonyak lehetnek, mivel egyszer beállítva minimális emberi beavatkozással folytathatják a munkát, csökkentve az ismétlődő feladatokhoz szükséges időt.',
-    emberText:'Az emberi munkaerő költsége magasabb lehet a fizetések és a munkavállalói juttatások miatt, de a tapasztalat és a figyelem fontos tényező.',
+    key: 'koltsegek',
+    secCim: 'Költségek és hatékonyság',
+    emberImgSrc: koltsegEmb,
+    miImgSrc: koltsegAI,
+    miText: 'A mesterséges intelligenciával működő rendszerek kezdeti költsége magas lehet, de hosszú távon költséghatékonyak, mivel minimalizálják a munkaerőigényt és növelik a termelési hatékonyságot. Az ismétlődő feladatokat gyorsabban és hibátlanul végzik el.',
+    emberText: 'Az emberi munkaerő drágább lehet a bérek és juttatások miatt, de az emberi dolgozók képesek kreatív problémamegoldásra és adaptív gondolkodásra. A tapasztalat és az emberi figyelem fontos tényező a hibák elkerülésében.'
   },
 
   {
-    key:'adaptáció',
-    secCim:'Adaptáció és problémamegoldás',
-    emberImgSrc:'',
-    miImgSrc:'',
-    miText:'Az AI a begyűjtött adatok alapján gyorsan azonosíthat problémákat és javasolhat optimalizációkat, de az új kihívásokhoz való alkalmazkodás még fejlesztés alatt áll.',
-    emberText:'Az emberek gyorsan reagálhatnak váratlan helyzetekre, például időjárási változásokra vagy géphibákra, és kreatív megoldásokat kínálhatnak.',
+    key: 'adaptacio',
+    secCim: 'Adaptáció és problémamegoldás',
+    emberImgSrc: adaptacioEmb,
+    miImgSrc: adaptacioAI,
+    miText: 'Az AI gyorsan felismerhet mintákat a begyűjtött adatokból, és javaslatokat tehet optimalizációra. Azonban az új kihívásokhoz való alkalmazkodás, például időjárási változások vagy gépi meghibásodások kezelése, még fejlesztést igényel.',
+    emberText: 'Az emberek rugalmasan tudnak reagálni váratlan helyzetekre, mint például az időjárás változásaira vagy technikai hibákra. Kreatív megoldásokat alkalmaznak, és képesek azonnali döntéseket hozni komplex helyzetekben.'
   },
 
   {
-    key:'etikai-kérdések',
-    secCim:'Etikai kérdések és jövőbeli kilátások',
-    emberImgSrc:'',
-    miImgSrc:'',
-    miText:'Az AI növelheti a termelékenységet és az élelmiszer-ellátás hatékonyságát, de a társadalmi és gazdasági hatásait még nem látjuk teljesen. Az automatizáció megváltoztathatja a munkaerőpiacot, új képességeket követelve.',
-    emberTex:'Az emberek helyettesítése robotokkal és AI-val felveti a munkanélküliség kérdését az agrárszektorban, különösen az alacsony képzettségű munkavállalók esetében.',
+    key: 'etikai-kerdesek',
+    secCim: 'Etikai kérdések és jövőbeli kilátások',
+    emberImgSrc: '',
+    miImgSrc: '',
+    miText: 'Az AI alapú automatizáció növeli a termelékenységet és a hatékonyságot az agrárszektorban, de kérdéseket vet fel a munkahelyek jövőjével kapcsolatban. Az alacsony képzettségű munkahelyek fokozatosan megszűnhetnek, új készségeket igényelve a munkavállalóktól.',
+    emberText: 'Az emberek szerepe változhat az AI térnyerésével, különösen az alacsony képzettségű munkavállalók esetében. Bár a technológia növeli a hatékonyságot, a társadalmi és gazdasági hatásokat még nem látjuk teljesen.'
   }
-
-]
+];
