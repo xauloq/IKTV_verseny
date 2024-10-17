@@ -1,11 +1,22 @@
 import PropTypes from "prop-types";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import './Section.css';
 
 function Section(props) {
     const [imgSrc, setImgSrc] = useState(props.emberImgSrc);
     const [isMiLayout, setIsMiLayout] = useState(false);
     const [activeText, setActiveText] = useState('');
+
+    useEffect(() => {
+        const preloadImages = (srcArray) => {
+            srcArray.forEach((src) => {
+                const img = new Image();
+                img.src = src;
+            });
+        };
+
+        preloadImages([props.emberImgSrc, props.miImgSrc]);
+    }, [props.emberImgSrc, props.miImgSrc]);
 
     const handleEmberClick = () => {
         setImgSrc(props.emberImgSrc);
