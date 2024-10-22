@@ -8,6 +8,8 @@ import koltsegEmb from './assets/koltsegEmb.png';
 import koltsegAI from './assets/koltsegAI.png';
 import adaptacioEmb from './assets/adaptacioEmb.png';
 import adaptacioAI from './assets/adaptacioAI.png';
+import etikaikAI from './assets/etikaikAI.png';
+import etikaikEmb from './assets/etikaikEmb.png';
 
 export const text = [
   {
@@ -58,8 +60,8 @@ export const text = [
   {
     key: 'etikai-kerdesek',
     secCim: 'Etikai kérdések és jövőbeli kilátások',
-    emberImgSrc: '',
-    miImgSrc: '',
+    emberImgSrc: etikaikEmb,
+    miImgSrc: etikaikAI,
     miText: 'Az AI alapú automatizáció növeli a termelékenységet és a hatékonyságot az agrárszektorban, de kérdéseket vet fel a munkahelyek jövőjével kapcsolatban. Az alacsony képzettségű munkahelyek fokozatosan megszűnhetnek, új készségeket igényelve a munkavállalóktól.',
     emberText: 'Az emberek szerepe változhat az AI térnyerésével, különösen az alacsony képzettségű munkavállalók esetében. Bár a technológia növeli a hatékonyságot, a társadalmi és gazdasági hatásokat még nem látjuk teljesen.'
   }

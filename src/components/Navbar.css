@@ -1,69 +1,35 @@
-nav {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: linear-gradient(135deg, #f9f9f9 65%, rgba(34, 139, 34, 0.66));
-    padding: 1.5rem 1.5rem;
-    text-align: left;
-    font-size: 1rem;
-    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
+.navbar {
+    background-color: #105E26; /* Emerald green theme */
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
 }
 
-nav:hover {
-    box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.4);
-}
-
-nav a {
-    font-size: 2rem;
+.navbar-title {
+    font-size: 2.3rem;
     font-weight: bold;
-    color: #333333;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.navbar-links li {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #f1be9b;
+    font-size: 1.1rem;
     transition: color 0.3s ease;
 }
 
-nav a.nav-link {
-    color: #333333;
-}
-
-nav ul {
-    list-style-type: none;
-    display: flex;
-    gap: 2rem;
-}
-
-nav ul li {
-    cursor: pointer;
-    position: relative;
-    font-size: 1.1rem;
-    color: #d1d5db;
-    transition: color 0.3s ease, transform 0.3s ease;
-}
-
-nav ul li:hover {
-    color: #f9fafb;
-    transform: scale(1.1);
-}
-
-nav ul li::after {
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    background-color: #f9fafb;
-    bottom: -4px;
-    left: 0;
-    transition: width 0.3s ease;
-}
-
-nav ul li:hover::after {
-    width: 100%;
-}
-
-nav ul li:hover {
-    text-decoration: none;
-}
-
-nav ul li:active {
-    transform: scale(0.95);
+.navbar-links a:hover {
+    color: #a8e6cf;
 }

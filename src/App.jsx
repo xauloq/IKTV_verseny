@@ -3,20 +3,35 @@ import NavbarMain from './components/Navbar';
 import Footer from './components/Footer';
 import Section from './components/Section';
 import { text } from './data.js'
+import {isVisible} from "bootstrap/js/src/util/index.js";
 
 function App() {
-        return (
-            <div>
-                    <NavbarMain />
-                    <Section {...text[0]} ></Section>
-                    <Section {...text[1]} ></Section>
-                    <Section {...text[2]} ></Section>
-                    <Section {...text[3]} ></Section>
-                    <Section {...text[4]} ></Section>
-                    <Section {...text[5]} ></Section>
-                    <Footer />
-            </div>
-        );
+    return (
+        <div>
+            <NavbarMain/>
+            <h1 id="fooldal"></h1>
+
+            <h1 id="termesfelism"></h1>
+            <Section {...text[0]}></Section>
+
+            <h1 id="szureteles"></h1>
+            <Section {...text[1]}></Section>
+
+            <h1 id="logisztika"></h1>
+            <Section {...text[2]}></Section>
+
+            <h1 id="koltsegek"></h1>
+            <Section {...text[3]}></Section>
+
+            <h1 id="adaptacio"></h1>
+            <Section {...text[4]}></Section>
+
+            <h1 id="etikaikerdesek"></h1>
+            <Section {...text[5]}></Section>
+
+            <Footer/>
+        </div>
+    );
 }
 
 export default App;
