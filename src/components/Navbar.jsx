@@ -1,24 +1,28 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import React from 'react';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 import './Navbar.css';
 
-function NavbarMain() {
+const CustomNavbar = () => {
     return (
-        <Navbar expand="lg" className="bg-body-tertiary">
+        <Navbar variant="dark" expand="lg">
             <Container>
-                <Navbar.Brand href="#home">Az AI a mai világban</Navbar.Brand>
+                <Navbar.Brand href="#fooldal">
+                    Almáskertek
+                </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
-                        <Nav.Link href="#home">Főoldal</Nav.Link>
-                        <Nav.Link href="#link">Dizájn</Nav.Link>
-                        <Nav.Link href="#link">Források</Nav.Link>
+                    <Nav className="ml-auto">
+                        <Nav.Link href="#termesfelism">Termés Felismerés</Nav.Link>
+                        <Nav.Link href="#szureteles">Szüretelés</Nav.Link>
+                        <Nav.Link href="#logisztika">Logisztika</Nav.Link>
+                        <Nav.Link href="#koltsegek">Költségek</Nav.Link>
+                        <Nav.Link href="#adaptacio">Adaptáció</Nav.Link>
+                        <Nav.Link href="#etikaikerdesek">Etikai Kérdések</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
         </Navbar>
     );
-}
+};
 
-export default NavbarMain;
+export default CustomNavbar;

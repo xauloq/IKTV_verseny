@@ -1,29 +1,53 @@
-footer {
-    position: relative;
-    bottom: 0;
-    left: 0;
-    margin-top: 1.5rem;
-    width: 100%;
-    background-color: green;
-    color: #f9f9f9;
-    padding: 1rem;
-    text-align: center;
-    font-size: 5rem;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    color: #343a40;
+    margin-top: 2rem;
+    border-top: 2px solid #e9ecef;
+
 }
 
-footer a {
-    color: #61dafb;
+.footer-section {
+    flex: 1;
+    margin: 0 1rem;
+}
+
+.footer-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #28a745; /* Green tone */
+}
+
+.footer-section p, .footer-section a {
+    font-size: 1rem;
+    color: #6c757d; /* Medium gray */
     text-decoration: none;
-    transition: color 0.3s ease;
 }
 
-footer a:hover {
-    color: #33a2db;
+.footer-section a:hover {
+    color: #28a745; /* Green tone */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 1rem;
+    background-color: #e9ecef; /* Light gray background */
+    color: #343a40; /* Dark text color */;
+}
+
+.footer-bottom a {
+    color: #28a745; /* Green tone */
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    color: #218838; /* Darker green tone */
     text-decoration: underline;
 }
 
-p {
-    color : #f9f9f9 !important;
-    font-size: 1rem !important;
+.ListBottom {
+    list-style-type: none;
+    text-align: center;
 }

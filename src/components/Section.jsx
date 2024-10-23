@@ -2,42 +2,32 @@ import PropTypes from "prop-types";
 import { useState, useEffect } from "react";
 import './Section.css';
 
-function Section(props) {
-    const [imgSrc, setImgSrc] = useState(props.emberImgSrc);
+function Section({ secCim, emberImgSrc, miImgSrc, emberText, miText }) {
+    const [imgSrc, setImgSrc] = useState(emberImgSrc);
     const [isMiLayout, setIsMiLayout] = useState(false);
-    const [activeText, setActiveText] = useState('');
+    const [activeText, setActiveText] = useState('ember');
 
     useEffect(() => {
-        const preloadImages = (srcArray) => {
-            srcArray.forEach((src) => {
-                const img = new Image();
-                img.src = src;
-            });
-        };
+        [emberImgSrc, miImgSrc].forEach(src => {
+            const img = new Image();
+            img.src = src;
+        });
+    }, [emberImgSrc, miImgSrc]);
 
-        preloadImages([props.emberImgSrc, props.miImgSrc]);
-    }, [props.emberImgSrc, props.miImgSrc]);
-
-    const handleEmberClick = () => {
-        setImgSrc(props.emberImgSrc);
-        setIsMiLayout(false);
-        setActiveText('ember');
-    };
-
-    const handleMiClick = () => {
-        setImgSrc(props.miImgSrc);
-        setIsMiLayout(true);
-        setActiveText('mi');
+    const handleClick = (isMi) => {
+        setImgSrc(isMi ? miImgSrc : emberImgSrc);
+        setIsMiLayout(isMi);
+        setActiveText(isMi ? 'mi' : 'ember');
     };
 
     return (
         <section className="container sectionCont card mt-4">
-            <h2>{props.secCim}</h2>
+            <h2>{secCim}</h2>
             <div className="row">
-                <div className={`col-md-6 text-center ${activeText === 'ember' ? 'active' : ''}`} onClick={handleEmberClick}>
+                <div className={`col-md-6 text-center ${activeText === 'ember' ? 'active' : ''}`} onClick={() => handleClick(false)}>
                     <h3>Ember</h3>
                 </div>
-                <div className={`col-md-6 text-center ${activeText === 'mi' ? 'active' : ''}`} onClick={handleMiClick}>
+                <div className={`col-md-6 text-center ${activeText === 'mi' ? 'active' : ''}`} onClick={() => handleClick(true)}>
                     <h3>Mi</h3>
                 </div>
             </div>
@@ -45,7 +35,7 @@ function Section(props) {
                 {isMiLayout ? (
                     <>
                         <div className="col-md-6">
-                            <p>{props.miText}</p>
+                            <p>{miText}</p>
                         </div>
                         <div className="col-md-6">
                             <img src={imgSrc} alt=""/>
@@ -57,7 +47,7 @@ function Section(props) {
                             <img src={imgSrc} alt=""/>
                         </div>
                         <div className="col-md-6">
-                            <p>{props.emberText}</p>
+                            <p>{emberText}</p>
                         </div>
                     </>
                 )}
@@ -67,7 +57,6 @@ function Section(props) {
 }
 
 Section.propTypes = {
-    emberCim: PropTypes.string.isRequired,
     secCim: PropTypes.string.isRequired,
     emberImgSrc: PropTypes.string.isRequired,
     miImgSrc: PropTypes.string.isRequired,
