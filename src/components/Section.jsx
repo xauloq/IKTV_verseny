@@ -5,7 +5,7 @@ import './Section.css';
 function Section({ secCim, emberImgSrc, miImgSrc, emberText, miText }) {
     const [imgSrc, setImgSrc] = useState(emberImgSrc);
     const [isMiLayout, setIsMiLayout] = useState(false);
-    const [activeText, setActiveText] = useState('');
+    const [activeText, setActiveText] = useState('ember');
 
     useEffect(() => {
         [emberImgSrc, miImgSrc].forEach(src => {
