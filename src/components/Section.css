@@ -96,6 +96,10 @@ img {
 }
 
 @media (max-width: 768px) {
+    .sectionCont {
+        border-radius: 0 !important;
+    }
+
     img {
         width: clamp(200px, 100%, 500px);
         margin: 2% auto;
