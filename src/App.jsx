@@ -2,14 +2,17 @@ import './App.css';
 import NavbarMain from './components/Navbar';
 import Footer from './components/Footer';
 import Section from './components/Section';
+import Intro from './components/Intro';
 import { text } from './data.js'
-import {isVisible} from "bootstrap/js/src/util/index.js";
+
 
 function App() {
     return (
         <div>
             <NavbarMain/>
             <h1 id="fooldal"></h1>
+
+            <Intro></Intro>
 
             <h1 id="termesfelism"></h1>
             <Section {...text[0]}></Section>

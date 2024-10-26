@@ -4,7 +4,7 @@ import './Navbar.css';
 
 const CustomNavbar = () => {
     return (
-        <Navbar variant="dark" expand="lg">
+        <Navbar variant="dark" expand="lg" fixed="top">
             <Container>
                 <Navbar.Brand href="#fooldal">
                     Almáskertek
