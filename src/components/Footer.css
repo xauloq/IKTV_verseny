@@ -4,6 +4,8 @@
     padding: 2rem;
     background-color: #f8f9fa;
     color: #343a40;
+    width: 100%;
+    overflow-x: hidden;
     margin-top: 2rem;
     border-top: 2px solid #e9ecef;
 
@@ -17,33 +19,33 @@
 .footer-section h2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #28a745; /* Green tone */
+    color: #28a745;
 }
 
 .footer-section p, .footer-section a {
     font-size: 1rem;
-    color: #6c757d; /* Medium gray */
+    color: #6c757d;
     text-decoration: none;
 }
 
 .footer-section a:hover {
-    color: #28a745; /* Green tone */
+    color: #28a745;
 }
 
 .footer-bottom {
     text-align: center;
     padding: 1rem;
-    background-color: #e9ecef; /* Light gray background */
-    color: #343a40; /* Dark text color */;
+    background-color: #e9ecef;
+    color: #343a40;
 }
 
 .footer-bottom a {
-    color: #28a745; /* Green tone */
+    color: #28a745;
     text-decoration: none;
 }
 
 .footer-bottom a:hover {
-    color: #218838; /* Darker green tone */
+    color: #218838;
     text-decoration: underline;
 }
 
