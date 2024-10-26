@@ -1,0 +1,37 @@
+.intro-section {
+    padding: 4rem 2rem;
+    background-color: #f8f9fa;
+    color: #343a40;
+    text-align: center;
+}
+
+.intro-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.intro-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #105E26;
+}
+
+.intro-container p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #6c757d;
+}
+
+.intro-container h3:hover {
+    color: inherit;
+    cursor: default;
+    text-decoration: none;
+    transition: none;
+}
+
+.intro-container hr {
+    border: none;
+    height: 2px;
+    background-color: #105E26;
+    margin: 2rem 0;
+}
