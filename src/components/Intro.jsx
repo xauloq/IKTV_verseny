@@ -7,12 +7,12 @@ const Intro = () => {
         <section id="intro" className="intro-section">
             <div className="intro-container">
                 <br></br>
-                <h1>Okos kertek: Az alma betakarítás jövője</h1>
+                <h1>Bold Agro Kft. - Az alma betakarítás jövője</h1>
                 <br></br>
                 <hr></hr>
                 <br></br>
-                <h3>Mire tudnánk felhasználni a mesterséges intelligencia erejét az almáskertek optimalizálására?</h3>
-                <h3>Hogyan lehetne a hatékonyságot akár többszörösére növelni?</h3>
+                <h3>Hogyan használja a Bold Agro Kft. a mesterséges intelligenciát az almáskertek optimalizálására?</h3>
+                <h3>Hogyan segíti az MI a hatékonyság és fenntarthatóság növelését Derecskén?</h3>
                 <br></br>
                 <hr></hr>
                 <ScrollButton targetId="termesfelism">Tovább a tartalomhoz</ScrollButton>
