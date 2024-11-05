@@ -1,6 +1,6 @@
-# SeedIT - IKTV verseny
+# SeedIT - Bold Agro kft. és a MI
 
-Ez a projekt egy React alapú webalkalmazás, amelyet a Debreceni Egyetem XIII. Ihrig Károly Tanulmányi Versenyére hoztunk létre. A weboldal célja a modern technológiák alkalmazása és interaktív felhasználói élmény nyújtása. A jövőben tervezzük a tartalom bővítését és további funkciók hozzáadását.
+Ez a projekt egy React alapú webalkalmazás, amelyet a Debreceni Egyetem XIII. Ihrig Károly Tanulmányi Versenyére hoztunk létre. A weboldal célja a modern technológiák alkalmazása és interaktív felhasználói élmény nyújtása.
 
 ## Alkalmazott Technológiák
 
@@ -11,18 +11,18 @@ Ez a projekt egy React alapú webalkalmazás, amelyet a Debreceni Egyetem XIII. 
 
 ## Telepítés és Futtatás
 
-Ha szeretnéd futtatni ezt a projektet helyi környezetben, kövesd az alábbi lépéseket:
+Ha szeretné futtatni ezt a projektet helyi környezetben, kövesse az alábbi lépéseket:
 
 1. **Clone-olja a repót**:
    ```bash
-   git clone https://github.com/felhasznalonev/projektneve.git
+   git clone https://github.com/xauloq/IKTV_verseny.git
 2. **Navigáljon a könyvtárba**
    ```bash
-   cd projektneve
+   cd IKTV_verseny
 3. **Telepítse a szükséges csomagokat:**
    ```bash
    npm install
 4. **Futtassa a fejlesztési környezetet**
    ```bash
    npm run dev
-  **Az alkalmazás most már elérhető lesz a helyi szerveren a http://localhost:5173 címen.**
+  **Az alkalmazás most már elérhető lesz a terminálon megjelenő címen. (http://localhost:5173/IKTV_verseny/)**
