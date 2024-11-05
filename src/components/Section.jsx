@@ -28,7 +28,7 @@ function Section({ secCim, emberImgSrc, miImgSrc, emberText, miText }) {
                     <h3>Ember</h3>
                 </div>
                 <div className={`col-md-6 text-center ${activeText === 'mi' ? 'active' : ''}`} onClick={() => handleClick(true)}>
-                    <h3>Mi</h3>
+                    <h3>MI</h3>
                 </div>
             </div>
             <div className={`row ${isMiLayout ? 'mi-layout' : 'ember-layout'}`}>
