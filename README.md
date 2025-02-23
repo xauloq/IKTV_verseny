@@ -1,6 +1,4 @@
-# SeedIT - Bold Agro kft. és a MI
-
-# WINNER OF '24 IKTV
+# SeedIT - Bold Agro kft. és a MI | WINNER OF IKTV '24 🥇
 
 Ez a projekt egy React alapú webalkalmazás, amelyet a Debreceni Egyetem XIII. Ihrig Károly Tanulmányi Versenyére hoztunk létre. A weboldal célja a modern technológiák alkalmazása és interaktív felhasználói élmény nyújtása.
 
